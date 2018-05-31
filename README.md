@@ -27,10 +27,10 @@ Feel free to contribute or discuss this application. Please contact me if you fi
 ### Website
 
 * Go in your repository : 
-  * Mac and MAMP : ```bash cd ./Applications/MAMP/htdocs/```
-  * Windows and WAMP : ```bash cd ./wamp/www/```
+  * Mac and MAMP : ```cd ./Applications/MAMP/htdocs/```
+  * Windows and WAMP : ```cd ./wamp/www/```
   * Linux and LAMP : I'm sorry, I don't know 
-* Clone ```bash git clone https://github.com/UKyz/Princeton-Plainsboro.git```
+* Clone ```git clone https://github.com/UKyz/Princeton-Plainsboro.git```
 
 ### Database
 
