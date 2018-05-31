@@ -4,7 +4,7 @@
   <img src="http://victor-fauquembergue.fr/imagesGit/princeton0">
 </p>
 
-We had to implement a web application in PHP-HTML-CSS-MySQL. This application is general practitioner appointment management system. It can be used for a clinic or a hospital to allow patients and doctors to create, manage or delete appointments. This web application can be managed by an admin who can manage doctors and also the web-site's contains.
+We have implemented a web application in PHP-HTML-CSS-MySQL. This application is a general practitioner appointment management system. It can be used for a clinic or a hospital to allow patients and doctors to create, control or delete appointments. This web application can be managed by an admin who can manage doctors and also the web-site's contains.
 
 Feel free to contribute or discuss this application. Please contact me if you find a bug. 
 
@@ -13,14 +13,9 @@ Feel free to contribute or discuss this application. Please contact me if you fi
     * [Website][Website]
     * [Database][Database]
     * [Launch][Launch]
-  * [Gameplay][Gameplay]
-    * [The city][City]
-    * [The divinity][Divinity]
-    * [The units][Unit]
-    * [The wonders][Wonder]
-    * [The scientists][Scientists]
-    * [Screenshots][Screenshots]
-  * [Team][Team]
+  * [Requierements][Requierements]
+  * [Details][Details]
+  * [Credits][Credits]
 
 ## Install & Launch
 
@@ -61,7 +56,29 @@ Feel free to contribute or discuss this application. Please contact me if you fi
 * MAMP for MacOS [(install link)][MAMP] or WAMP for Windows [(install link)][WAMP] or LAMP for Linux [(install link)][LAMP]
 * A text Editor
 
-## Gameplay
+## Details
+  The goal of this application is to make life easier for doctors and patients. This service is using a databse which is managing every doctors and every patients in the hospital, but also any appointments they can create or ask by himself. And finally all pages' contents are created and managed by the admin thanks to the databse.
+  Every patients and every doctors need to sign up to use this application. With your account you can create, control or delete appointements by a simple click. 
+  This application can be managed by an admin. This admin is allow to change the pages' contains. He can add texts and photos in every pages. He can also managed patients' and doctors' accounts, every doctor has to be confirmed by the admin to be a part of the doctors' list.
+  
+  ### Home
+  
+  In the home page you can see the opening hours of the day and also some photos of the clinic.
+  
+  ### Services
+  
+  You can see the doctors with photos, and there is also a link if you are a doctor and you want to join de clinic.
+  
+  ### Consultation Fees
+  
+  In this page there is many questions that are uselly asked about consultations and appointements.
+  
+  ### Resources
+  
+  There is many usefull links about healthcare.
+  
+  
+  
  The goal of the game is to win over the rival city. You will have, at your service, a city full of resources, units, scientists, wonders and also a divinity to believe in. As a master of the city, you will be able to do a lot of actions. First of all, you will need some units to defend the land, because the enemy can come over at every moment and attack your city. If they win, they will steal a lot of resources. Despite that you can also attack the rival whenever you want. <br />
  Then you will need resources to operate, you will be able to buy, chop and sell resources. You will manage your stocks of gold, corn and wood. Gold will be usefull for everything, you will need corn to heal your units most of the time, and finally wood will be precious to build wonders and help your city to grow faster. <br />
  Every city has a divinity, so that you will be having one too. You will need to be kind with your pray, because the divinity is a little bit capricious. By offering resources to the divinity, you will be able to receive some favors or blessings. This can be helpfull in the tough moments. <br />
@@ -107,16 +124,14 @@ Feel free to contribute or discuss this application. Please contact me if you fi
 [Website]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#web-site
 [Database]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#database
 [Launch]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#launch
-[Gameplay]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#gameplay
+[Requierements]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#requierements
+[Details]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#details
 [City]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-city
 [Unit]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-units
 [Scientists]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-scientists
 [Wonder]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-wonders
 [Divinity]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-divinity
 [Screenshots]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#screenshots
-[Contribute]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#contribute
-[Tests]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#execute-the-tests
-[CheckXo]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#check-the-code-style
-[Team]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#team-
+[Credits]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#credits
 [Alexia]: https://github.com/Alexia14
 [Me]: https://github.com/UKyz
