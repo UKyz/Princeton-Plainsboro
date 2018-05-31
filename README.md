@@ -20,9 +20,6 @@ Feel free to contribute or discuss this application. Please contact me if you fi
     * [The wonders][Wonder]
     * [The scientists][Scientists]
     * [Screenshots][Screenshots]
-  * [Contribute][Contribute]
-    * [Execute the tests][Tests]
-    * [Check the code style][CheckXo]
   * [Team][Team]
 
 ## Install
@@ -96,36 +93,17 @@ Feel free to contribute or discuss this application. Please contact me if you fi
   <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot7">
   <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot8">
  </p>
-  
-
-## Contribute 
-### Execute the tests
-  This project is based on the BDD method. Every classes has a test file to test what's required to be executed. The test can also show a bogue when the class is modified. [(See what BDD is)][BDDWiki]
-  
-  To test every classes : 
-  
-```bash
-mocha
-```
-
-### Check the code style
-  This project uses the framework xojs. xojs is a ESLint wrapper that enforce strict and readable code. Everything works fine with xo [(See what xo is)][xo], if you want to check xo you just need to execute : 
-  
-```bash
-xo
-```
 
 ## Credits
-  * [Couton Alexia][Alexia] : (Scientists)
-  * [Fauquembergue Victor][Me] (Main, Update divinity (classe given with the project), Wonder, Unit, City) 
-  * Lagadec Julien (Some ideas)
+  * [Couton Alexia][Alexia] : (Appointements)
+  * [Fauquembergue Victor][Me] (Doctors, Admin, Patients, CSS)
 
 [MAMP]: https://www.mamp.info/en/downloads/
 [WAMP]: http://www.wampserver.com/#download-wrapper
 [LAMP]: https://doc.ubuntu-fr.org/lamp
 [BDDWiki]: https://en.wikipedia.org/wiki/Behavior-driven_development
 [xo]: https://github.com/xojs/xo
-[Installation]: https://github.com/UKyz/Princeton-Plainboro/blob/master/README.md#install
+[Installation]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#install
 [Website]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#web-site
 [Database]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#database
 [Launch]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#launch
