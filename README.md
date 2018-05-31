@@ -9,8 +9,8 @@ We had to implement a web application in PHP-HTML-CSS-MySQL. This application is
 Feel free to contribute or discuss this application. Please contact me if you find a bug. 
 
 ## Contents
-  * [Install][Installation]
-    * [Web-site][Website]
+  * [Install & Launch][Installation]
+    * [Website][Website]
     * [Database][Database]
     * [Launch][Launch]
   * [Gameplay][Gameplay]
@@ -22,9 +22,9 @@ Feel free to contribute or discuss this application. Please contact me if you fi
     * [Screenshots][Screenshots]
   * [Team][Team]
 
-## Install
+## Install & Launch
 
-### Web-site
+### Website
 
 * Go in your repository : 
   * Mac and MAMP : ```bash cd ./Applications/MAMP/htdocs/```
@@ -103,7 +103,7 @@ Feel free to contribute or discuss this application. Please contact me if you fi
 [LAMP]: https://doc.ubuntu-fr.org/lamp
 [BDDWiki]: https://en.wikipedia.org/wiki/Behavior-driven_development
 [xo]: https://github.com/xojs/xo
-[Installation]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#install
+[Installation]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#install--launch
 [Website]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#web-site
 [Database]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#database
 [Launch]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#launch
