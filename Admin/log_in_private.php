@@ -39,7 +39,7 @@ function connexion() {
 	}
 	else {
 
-		$html = "<form method=\"POST\" action=\"log_in_private.php\" class=\"form_style\">\n\t<ul>\n";
+		$html = "<form method=\"POST\" action=\"./Admin/log_in_private.php\" class=\"form_style\">\n\t<ul>\n";
 
 	    $html .= "\t\t<li><input class=\"field-style field-full align-non\" type=\"email\" name=\"mail\" placeholder=\"Email\" /></li>\n";
 		$html .= "\t\t<li><input class=\"field-style field-full align-non\" type=\"password\" name=\"password\" placeholder=\"•••••••\" /></li>\n";
@@ -57,15 +57,15 @@ function print_private_access() {
 	// If we have a session for admin or doctor before, we are guided to the private page
 
 	if ($_SESSION['type'] == "admin") {
-		echo "<script>document.location.href = 'admin_index.php';</script>";
+		echo "<script>document.location.href = './Admin/admin_index.php';</script>";
 	}
 	else if ($_SESSION['type'] == "doctor") {
-		echo "<script>document.location.href = 'doctor_index.php'; </script>";
+		echo "<script>document.location.href = './Doctor/doctor_index.php'; </script>";
 	}
 	else {
 		// If there is a session but not for doctor or admin, you cannot access here
 		echo "<script>alert(\"You cannot access private pages.\")
-			document.location.href = 'index.php'; 
+			document.location.href = './index.php'; 
 			</script>";
 	}
 
@@ -78,18 +78,18 @@ function print_private_access() {
 	<head>
 		<title>General Practioner</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/png" href="Images/icon.ico" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="icon" type="image/png" href="./assets/Images/icon.ico" />
 	</head>
 	<body>
 
-	<?php include('header.php');?>
+	<?php include('./Presentation/header.php');?>
 
 	<h2 class="titles_h2">Private access</h2>
 
 	<?php connexion();?>
 
-	<?php include('footer.php');?>
+	<?php include('./Presentation/footer.php');?>
 
 	</body>
 </html>

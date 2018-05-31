@@ -31,7 +31,7 @@ function print_photo($table) {
 	// Return HTML code about an article of photo type
 
 	$html = "<div class=\"div_class\" href=\"" . $table['link'] . "\">\n";
-	$html .= "\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "</div>\n";
 
 	return $html;
@@ -45,7 +45,7 @@ function print_photo_text($table) {
 	$html = "<div class=\"div_class\">\n";
 	$html .= "\t<h3>" . $table['titre'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t</div>\n";
 	$html .= "</div>\n";
@@ -60,7 +60,7 @@ function print_link_photo($table) {
 	$html = "<a class=\"div_class\" href=\"" . $table['link'] . "\">\n";
 	$html .= "\t<h3>" . $table['titre'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t</div>\n";
 	$html .= "</a>\n";
@@ -146,25 +146,57 @@ function print_page($page) {
 		}
 	}
 }
+
+function print_timetable() {
+
+	// This function display the timetable from the db in a table
+
+	try {
+	    $bdd = new PDO('mysql:host=localhost;dbname=g_practitioner;charset=utf8', 'root', 'root');
+	}
+	catch (Exception $e) {
+		die('Erreur : ' . $e->getMessage());
+	}
+
+	$reponse = $bdd->query('SELECT * FROM timetable');
+	$donnees = $reponse->fetch();
+
+	$html = "<table class=\"tab_hour_style\">\n";
+	$html .= "\t<thead><th>Days</th><th>Hours</th></thead>\n";
+	$html .= "\t<tbody>\n";
+	$html .= "\t\t<tr><td> Monday </td><td> " . $donnees["Monday"] . " </td></tr>\n";
+	$html .= "\t\t<tr><td> Tuesday </td><td> " . $donnees["Tuesday"] . " </td></tr>\n";
+	$html .= "\t\t<tr><td> Wednesday </td><td> " . $donnees["Wednesday"] . " </td></tr>\n";
+	$html .= "\t\t<tr><td> Thursday </td><td> " . $donnees["Thursday"] . " </td></tr>\n";
+	$html .= "\t\t<tr><td> Friday </td><td> " . $donnees["Friday"] . " </td></tr>\n";
+	$html .= "\t\t<tr><td> Saturday </td><td> " . $donnees["Saturday"] . " </td></tr>\n";
+	$html .= "\t\t<tr><td> Sunday </td><td> " . $donnees["Sunday"] . " </td></tr>\n";
+	$html .= "\t</tbody>\n</table>\n";
+
+	echo $html;
+
+}
 ?>
 
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Our Resources</title>
+		<title>Contact Us</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/png" href="Images/icon.ico" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="icon" type="image/png" href="./assets/Images/icon.ico" />
 	</head>
 	<body>
 
-	<?php include('header.php');?>
+	<?php include('./Presentation/header.php');?>
 
-	<h2 class="titles_h2">Resources</h2>
+	<h2 class="titles_h2">Contact Us</h2>
 
-	<?php print_page('resources');?>
+	<?php print_page('contact');?>
 
-	<?php include('footer.php');?>
+	<?php print_timetable(); ?>
+
+	<?php include('./Presentation/footer.php');?>
 
 	</body>
 </html>

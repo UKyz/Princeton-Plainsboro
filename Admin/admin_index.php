@@ -6,12 +6,12 @@ session_start(); //Call to $_SESSION[]
 
 if (!isset($_SESSION) && empty($_SESSION)) {
 	echo "<script>alert(\"You cannot access to this page without log in.\")
-		document.location.href = 'index.php'; 
+		document.location.href = './index.php'; 
 		</script>";
 }
 else if ($_SESSION['type'] != "admin") {
 	echo "<script>alert(\"You cannot access to this page without log in.\")
-		document.location.href = 'index.php'; 
+		document.location.href = './index.php'; 
 		</script>";
 }
 
@@ -62,7 +62,7 @@ function main() {
 					// If it's not, we print a message and refresh the page.
 
 					echo "<script>alert(\"This ID is already given.\")
-						document.location.href = 'admin_index.php'; 
+						document.location.href = './Admin/admin_index.php'; 
 						</script>";
 				}
 
@@ -135,7 +135,7 @@ function print_photo($table) {
 	// Return HTML code about an article of photo type
 
 	$html = "<div class=\"div_class\" href=\"" . $table['link'] . "\">\n";
-	$html .= "\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t<p class=\"info_print_admin\"> Photo : " . $table['photo'] . "</p>\n";
 	$html .= "\t<p class=\"info_print_admin\"> ID : " . $table['id'] . "</p>\n";
 	$html .= "</div>\n";
@@ -164,7 +164,7 @@ function print_photo_text($table) {
 	$html = "<div class=\"div_class\">\n";
 	$html .= "\t<h3>" . $table['titre'] . " ID = " . $table['id'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t<p class=\"info_print_admin\"> Photo : " . $table['photo'] . "</p>\n";
 	$html .= "\t</div>\n";
@@ -180,7 +180,7 @@ function print_link_photo($table) {
 	$html = "<a class=\"div_class\" href=\"" . $table['link'] . "\">\n";
 	$html .= "\t<h3>" . $table['titre'] . " ID = " . $table['id'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t<p class=\"info_print_admin\"> Photo : " . $table['photo'] . "</p>\n";
 	$html .= "\t<p class=\"info_print_admin\"> Link : " . $table['link'] . "</p>\n";
@@ -326,7 +326,7 @@ function print_timetable() {
 	$reponse = $bdd->query('SELECT * FROM timetable');
 	$donnees = $reponse->fetch();
 
-	$html = "<form method=\"POST\" action=\"admin_index.php\">";
+	$html = "<form method=\"POST\" action=\"./Admin/admin_index.php\">";
 	$html .= "<table class=\"tab_hour_style\">\n";
 	$html .= "\t<thead><th>Days</th><th>Hours</th></thead>\n";
 	$html .= "\t<tbody>\n";
@@ -369,12 +369,12 @@ function print_choice($table) {
 
 	if ($request == null) {
 		echo "<script>alert(\"No article find for this id.\")
-            document.location.href = 'admin_index.php';
+            document.location.href = './Admin/admin_index.php';
             </script>";
 	}
 	else {
 
-		$html = "<form method=\"POST\" action=\"admin_index.php\" class=\"form_style\">\n<ul>\n";
+		$html = "<form method=\"POST\" action=\"./Admin/admin_index.php\" class=\"form_style\">\n<ul>\n";
 
 	    $html .="\t<div class=\"span_radio_3\">\n\t\t<span class=\"align-left\"><input type=\"radio\" name=\"choice\" value=\"update\" checked/> Update </span> <span class=\"align-right\"><input type=\"radio\" name=\"choice\" value=\"delete\" /> Delete </span>\n\t</div>\n";
 
@@ -476,17 +476,17 @@ function print_page($page) {
 	<head>
 		<title>(Admin) General Practioner</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/png" href="Images/icon.ico" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="icon" type="image/png" href="./assets/Images/icon.ico" />
 	</head>
 	<body>
 
 	<header class="top_header">
-		<h1><a href="index.php">Princeton Plainsboro</a></h1>
+		<h1><a href="./index.php">Princeton Plainsboro</a></h1>
 		<p>Welcome to the General Practitioner Appointment Management System.</p>
 
 		<div id="form_admin_index">
-			<form method="GET" action="admin_index.php">
+			<form method="GET" action="./Admin/admin_index.php">
 				<!-- This form is usefull to display the public page that we want -->
 				<input type="radio" name="page" value="homepage" checked/> Homepage <input type="radio" name="page" value="services" /> Services <input type="radio" name="page" value="consultation" /> Consultation Fees <input type="radio" name="page" value="resources" /> Resources <input type="radio" name="page" value="appointments" /> Appointments <input type="radio" name="page" value="contact" /> Contact
 				<input class="button_like_form_style" type="submit" value="Change the page" />
@@ -502,7 +502,7 @@ function print_page($page) {
 
 		<div class="in_div_2" id="point">
 
-		    <form class="form_style" method="POST" action="admin_index.php">
+		    <form class="form_style" method="POST" action="./Admin/admin_index.php">
 				<ul>
 					<li>
 						<div class="span_radio_1">
@@ -547,7 +547,7 @@ function print_page($page) {
 
 		<div class="in_div_2">
 
-		    <form class="form_style" method="POST" action="admin_index.php#point">
+		    <form class="form_style" method="POST" action="./Admin/admin_index.php#point">
 				<ul>
 					<li>
 						<div class="span_radio_1">
@@ -583,9 +583,9 @@ function print_page($page) {
 
     </div>
 
-	<p class="div_print_page"><a href="log_out.php" class="button_log_out">Log out</a></p>
+	<p class="div_print_page"><a href="./log_out.php" class="button_log_out">Log out</a></p>
 
-	<p class="div_print_page"><a href="manage_doctor.php" class="button_log_out">Manage Doctor</a></p>
+	<p class="div_print_page"><a href="./Doctor/manage_doctor.php" class="button_log_out">Manage Doctor</a></p>
 
 	<?php 
 		// Display the page from the header form
@@ -625,7 +625,7 @@ function print_page($page) {
 
 	<?php print_timetable();?>
 
-	<?php include('footer.php');?>
+	<?php include('./Presentation/footer.php');?>
 
 	</body>
 </html>

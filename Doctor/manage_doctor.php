@@ -120,7 +120,7 @@ function print_list_doctor($table) {
 
 	while ($donnees = $table->fetch()) {
 
-		$html .= "\t\t<tr><form method=\"GET\" action=\"manage_doctor.php\">";
+		$html .= "\t\t<tr><form method=\"GET\" action=\"./Doctor/manage_doctor.php\">";
 		if ($donnees['type'] == "Waiting") {
 			$html .= "<td class=\"red_info_left\">" . $donnees['type'] . "</td>";
 		}
@@ -155,15 +155,15 @@ function print_list_doctor($table) {
 	<head>
 		<title>(Admin) General Practioner</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/png" href="Images/icon.ico" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="icon" type="image/png" href="./assets/Images/icon.ico" />
 	</head>
 	<body>
 
-	<?php include('header.php');?>
+	<?php include('./Presentation/header.php');?>
 
-	<p class="div_print_page"><a href="admin_index.php" class="button_log_out">Admin page</a></p>
-	<p class="div_print_page"><a href="log_out.php" class="button_log_out">Log out</a></p>
+	<p class="div_print_page"><a href="./Admin/admin_index.php" class="button_log_out">Admin page</a></p>
+	<p class="div_print_page"><a href="./log_out.php" class="button_log_out">Log out</a></p>
 
 	<?php main();?>
 
@@ -195,7 +195,7 @@ function print_list_doctor($table) {
 
     <?php print_doctor();?>
 
-	<?php include('footer.php');?>
+	<?php include('./Presentation/footer.php');?>
 
 	</body>
 </html>

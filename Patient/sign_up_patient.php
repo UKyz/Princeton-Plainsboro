@@ -31,7 +31,7 @@ function sign_up() {
 			// If everything is alright, we add a new patient
 			add_to_DB($_POST);
 			echo "<script>alert(\"You succesfully registered in our patients.\")
-			document.location.href = 'appointments.php'; 
+			document.location.href = './Patient/appointments.php'; 
 			</script>";
 		}
 
@@ -69,12 +69,12 @@ function add_to_DB($table) {
 	<head>
 		<title>(Patient) General Practioner</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/png" href="Images/icon.ico" />
+		<link rel="stylesheet" href="./assets/main.css" />
+		<link rel="icon" type="image/png" href="./assets/Images/icon.ico" />
 	</head>
 	<body>
 
-	<?php include('header.php');?>
+	<?php include('./Presentation/header.php');?>
 
 	<h2 class="titles_h2">Sign up</h2>
 
@@ -82,7 +82,7 @@ function add_to_DB($table) {
 
 	<!-- The signup form -->
 
-    <form class="form_style" method="POST" action="sign_up_patient.php">
+    <form class="form_style" method="POST" action="./Patient/sign_up_patient.php">
 		<ul>
 			<li>
 			    <input type="text" name="name" class="field-style field-full align-non" placeholder="Name" />
@@ -109,13 +109,13 @@ function add_to_DB($table) {
 			<li class="button_middle">
 				<div class="bouton_align">
 					<span class="align-left"><input type="submit" value="Sign up" /></span>
-					<span class="align-right"><a href="appointments.php">Log in</a></span>
+					<span class="align-right"><a href="./Patient/appointments.php">Log in</a></span>
 				</div>
 			</li>
 		</ul>
 	</form>
 
-	<?php include('footer.php');?>
+	<?php include('./Presentation/footer.php');?>
 
 	</body>
 </html>

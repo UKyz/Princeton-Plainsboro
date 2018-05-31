@@ -47,12 +47,12 @@ if (isset($_POST) && !empty($_POST)) {
 
 				if ($_SESSION['type'] == "admin") {
 					echo "<script>alert(\"You succesfully log in as admin.\")
-						document.location.href = 'admin_index.php'; 
+						document.location.href = './Admin/admin_index.php'; 
 						</script>";
 				}
 				else if ($_SESSION['type'] == "doctor") {
 					echo "<script>alert(\"You succesfully log in as a doctor.\")
-						document.location.href = 'doctor_index.php'; 
+						document.location.href = './Doctor/doctor_index.php'; 
 						</script>";
 				}
 			}
@@ -118,14 +118,14 @@ function connexion() {
 	else {
 		// If there isn't a session, we display the login form with HTML code
 
-		$html = "<form method=\"POST\" action=\"appointments.php\" class=\"form_style\">\n\t<ul>\n";
+		$html = "<form method=\"POST\" action=\"./Patient/appointments.php\" class=\"form_style\">\n\t<ul>\n";
 
 		$html .= "\t\t<input type=\"hidden\" name=\"type\" value=\"login\"/>";
 
 	    $html .= "\t\t<li><input class=\"field-style field-full align-non\" type=\"email\" name=\"mail\" placeholder=\"Email\" /></li>\n";
 		$html .= "\t\t<li><input class=\"field-style field-full align-non\" type=\"password\" name=\"password\" placeholder=\"•••••••\" /></li>\n";
 
-	    $html .= "\t\t<li><div class=\"bouton_align\"><span class=\"align-left\"><input type=\"submit\" value=\"Log in\" /></span><span class=\"align-right\"><a href=\"sign_up_patient.php\">Sign up</a></span></div></li>\n";
+	    $html .= "\t\t<li><div class=\"bouton_align\"><span class=\"align-left\"><input type=\"submit\" value=\"Log in\" /></span><span class=\"align-right\"><a href=\"./Patient/sign_up_patient.php\">Sign up</a></span></div></li>\n";
 
 		$html .= "\t</ul>\n</form>\n";
 
@@ -210,7 +210,7 @@ function print_take_appointment() {
 
     // We search all doctors to show to the patients, he needs to select a doctor and a day
 
-	$Find_Doctor = "<form method=\"POST\" action=\"appointments.php\" class=\"form_style\">\n
+	$Find_Doctor = "<form method=\"POST\" action=\"./Patient/appointments.php\" class=\"form_style\">\n
 			\t<ul>
 
 				\t\t<input type=\"hidden\" name=\"type\" value=\"take_appointment\"/>
@@ -236,7 +236,7 @@ function print_take_appointment() {
 
     	if ($_POST['date'] == null) {
     		echo "<script>alert(\"Error, you have to put a date.\")
-                document.location.href = 'appointments.php'; 
+                document.location.href = './Patient/appointments.php'; 
                 </script>";
     	}
 
@@ -253,7 +253,7 @@ function print_take_appointment() {
         // We display a form to show to the patient all the hours where the doctor is free
 
     	$Find_Appointment = "
-    		<form method=\"POST\" action=\"appointments.php\" class=\"form_style\">\n
+    		<form method=\"POST\" action=\"./Patient/appointments.php\" class=\"form_style\">\n
                 \t<ul>
 
                     \t\t<li>Choose your hour with the Dr. " . trim($_POST['doctor']) . " for the " . $_POST['date'] ." :
@@ -292,7 +292,7 @@ function print_take_appointment() {
                             if (trim($time_t[$tableau_jours[$jour]]) == "Closed") {
                                 // If the day chosen is closed, we print a message
                                 echo "<script>alert(\"Sorry, it's closed on the day you have chosen.\")
-                                    document.location.href = 'appointments.php'; 
+                                    document.location.href = './Patient/appointments.php'; 
                                     </script>";
                             }
 
@@ -344,7 +344,7 @@ function print_take_appointment() {
             ));
         
         echo "<script>alert(\"You succesfully take an appointment, the appointment is waiting for the doctor.\")
-	        document.location.href = 'appointments.php'; 
+	        document.location.href = './Patient/appointments.php'; 
 	        </script>";
 	}
     
@@ -436,7 +436,7 @@ function print_photo($table) {
 	// Return HTML code about an article of photo type
 
 	$html = "<div class=\"div_class\" href=\"" . $table['link'] . "\">\n";
-	$html .= "\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "</div>\n";
 
 	return $html;
@@ -450,7 +450,7 @@ function print_photo_text($table) {
 	$html = "<div class=\"div_class\">\n";
 	$html .= "\t<h3>" . $table['titre'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t</div>\n";
 	$html .= "</div>\n";
@@ -465,7 +465,7 @@ function print_link_photo($table) {
 	$html = "<a class=\"div_class\" href=\"" . $table['link'] . "\">\n";
 	$html .= "\t<h3>" . $table['titre'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t</div>\n";
 	$html .= "</a>\n";
@@ -558,12 +558,12 @@ function print_page($page) {
 	<head>
 		<title>Appointments</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/png" href="Images/icon.ico" />
+		<link rel="stylesheet" href="./assets/main.css" />
+		<link rel="icon" type="image/png" href="./assets/Images/icon.ico" />
 	</head>
 	<body>
 
-	<?php include('header.php');?>
+	<?php include('./Presentation/header.php');?>
 
 	<h2 class="titles_h2">Appointments</h2>
 
@@ -575,7 +575,7 @@ function print_page($page) {
 
 	<?php connexion();?>
 
-	<?php include('footer.php');?>
+	<?php include('./Presentation/footer.php');?>
 
 	</body>
 </html>

@@ -75,7 +75,7 @@ function print_photo($table) {
 	// Return HTML code about an article of photo type
 
 	$html = "<div class=\"div_class\" href=\"" . $table['link'] . "\">\n";
-	$html .= "\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t<img src=\"assets/Images/" . $table['photo'] . "\">";
 	$html .= "</div>\n";
 
 	return $html;
@@ -89,7 +89,7 @@ function print_photo_text($table) {
 	$html = "<div class=\"div_class\">\n";
 	$html .= "\t<h3>" . $table['titre'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t</div>\n";
 	$html .= "</div>\n";
@@ -104,7 +104,7 @@ function print_link_photo($table) {
 	$html = "<a class=\"div_class\" href=\"" . $table['link'] . "\">\n";
 	$html .= "\t<h3>" . $table['titre'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t</div>\n";
 	$html .= "</a>\n";
@@ -198,11 +198,11 @@ function print_page($page) {
 		<title>Princeton Plainsboro</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/png" href="Images/icon.ico" />
+		<link rel="icon" type="image/png" href="assets/Images/icon.ico" />
 	</head>
 	<body>
 
-	<?php include('header.php');?>
+	<?php include('Presentation/header.php');?>
 
 	<h2 class="titles_h2">Home</h2>
 
@@ -210,7 +210,7 @@ function print_page($page) {
 
 	<?php print_page('homepage');?>
 
-	<?php include('footer.php');?>
+	<?php include('Presentation/footer.php');?>
 
 	</body>
 </html>
