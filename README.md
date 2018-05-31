@@ -125,10 +125,10 @@ xo
 [LAMP]: https://doc.ubuntu-fr.org/lamp
 [BDDWiki]: https://en.wikipedia.org/wiki/Behavior-driven_development
 [xo]: https://github.com/xojs/xo
-[Install]: https://github.com/UKyz/Princeton-Plainboro/blob/master/README.md#install
-[Website]: https://github.com/UKyz/Princeton-Plainboro/blob/master/README.md#web-site
-[Database]: https://github.com/UKyz/Princeton-Plainboro/blob/master/README.md#database
-[Launch]: https://github.com/UKyz/Princeton-Plainboro/blob/master/README.md#launch
+[Installation]: https://github.com/UKyz/Princeton-Plainboro/blob/master/README.md#install
+[Website]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#web-site
+[Database]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#database
+[Launch]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#launch
 [Gameplay]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#gameplay
 [City]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-city
 [Unit]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-units
