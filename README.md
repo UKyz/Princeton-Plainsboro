@@ -15,6 +15,13 @@ Feel free to contribute or discuss this application. Please contact me if you fi
     * [Launch][Launch]
   * [Requierements][Requierements]
   * [Details][Details]
+    * [Home][Home]
+    * [Services][Services]
+    * [Consultation Fees][Consultation]
+    * [Resources][Resources]
+    * [Appointements][Appointements]
+    * [Contact][Contact]
+    * [Screenshots][Screenshots]
   * [Credits][Credits]
 
 ## Install & Launch
@@ -77,23 +84,13 @@ Feel free to contribute or discuss this application. Please contact me if you fi
   
   There is many usefull links about healthcare.
   
+  ### Appointments
   
+  You can create and manage your appointments in this page. But first of all you need to sign up or log in.
   
- The goal of the game is to win over the rival city. You will have, at your service, a city full of resources, units, scientists, wonders and also a divinity to believe in. As a master of the city, you will be able to do a lot of actions. First of all, you will need some units to defend the land, because the enemy can come over at every moment and attack your city. If they win, they will steal a lot of resources. Despite that you can also attack the rival whenever you want. <br />
- Then you will need resources to operate, you will be able to buy, chop and sell resources. You will manage your stocks of gold, corn and wood. Gold will be usefull for everything, you will need corn to heal your units most of the time, and finally wood will be precious to build wonders and help your city to grow faster. <br />
- Every city has a divinity, so that you will be having one too. You will need to be kind with your pray, because the divinity is a little bit capricious. By offering resources to the divinity, you will be able to receive some favors or blessings. This can be helpfull in the tough moments. <br />
- And finally your city will have some clever guys. The scientists need some gold to be smarter, but the scientists can be the key of winning. Indeed you can win by science if your clever guys are high evolved.
- 
-  ### The city
-  You will control a city, your city. You need to bring the city at the top to win the battle.
-  ### The divinity
-  You will have a divinity in your city, you will be able to offer resources to the divinity. Wait and see if the divinity blesses you in return. But be careful, the divinity is capricious.
-  ### The units
-  You will have, to defend your city, some units. There can be some hapinness birth or some tragedic death in the ranks of units. You will be able to form units and prepare them to fight for you.
-  ### The wonders
-  You will be able to build wonders to help you win the battle. Wonders are beautiful and also very helpful to grow faster the number of resources of your city.
-  ### The scientists
-  You will have some scientists in your ranks, try to offer them some gold to see if they can help you and your city to be gretter. 
+  ### Contact
+  
+  You can see all contact that patients need and also the opening hours.
   
   ### Screenshots
   
@@ -118,20 +115,19 @@ Feel free to contribute or discuss this application. Please contact me if you fi
 [MAMP]: https://www.mamp.info/en/downloads/
 [WAMP]: http://www.wampserver.com/#download-wrapper
 [LAMP]: https://doc.ubuntu-fr.org/lamp
-[BDDWiki]: https://en.wikipedia.org/wiki/Behavior-driven_development
-[xo]: https://github.com/xojs/xo
 [Installation]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#install--launch
 [Website]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#web-site
 [Database]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#database
 [Launch]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#launch
 [Requierements]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#requierements
 [Details]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#details
-[City]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-city
-[Unit]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-units
-[Scientists]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-scientists
-[Wonder]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-wonders
-[Divinity]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#the-divinity
-[Screenshots]: https://github.com/UKyz/TPSevenWondersJS/blob/master/README.md#screenshots
+[Home]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#home
+[Services]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#services
+[Consultation]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#consultation-fees
+[Resources]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#resources
+[Appointements]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#appointements
+[Contact]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#contact
+[Screenshots]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#screenshots
 [Credits]: https://github.com/UKyz/Princeton-Plainsboro/blob/master/README.md#credits
 [Alexia]: https://github.com/Alexia14
 [Me]: https://github.com/UKyz
