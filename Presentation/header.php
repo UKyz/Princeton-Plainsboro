@@ -1,5 +1,5 @@
 <div class="top_logo_bar">
-	<a href="./index.php"><img src="./assets/Images/logo1.png" class="logo_header"></a>
+	<a href="../index.php"><img src="../assets/Images/logo1.png" class="logo_header"></a>
 
 	<?php 
 		// This PHP code is used to display at the top center of the page some information about the user.
@@ -22,8 +22,8 @@
 
 				echo "<div class=\"div_number_1\">\n\t\t";
 				echo "<a class=\"top_right\" href=\"./log_out.php\">";
-				echo "<img class=\"small_photo\" src=\"./assets/Images/cross_close.png\" alt=\"Log out\" title=\"Log out\"></a>\n";
-				echo "\t\t<a href=\"./Patient/appointments.php\" class=\"am_i_this_person\">\n\t\t\t" . $_SESSION['name'];
+				echo "<img class=\"small_photo\" src=\"../assets/Images/cross_close.png\" alt=\"Log out\" title=\"Log out\"></a>\n";
+				echo "\t\t<a href=\"../Patient/appointments.php\" class=\"am_i_this_person\">\n\t\t\t" . $_SESSION['name'];
 				echo "<br />\n";
 				
 				$cpt = 0;
@@ -48,8 +48,8 @@
 
 				echo "<div class=\"div_number_1\">\n\t\t";
 				echo "<a class=\"top_right\" href=\"./log_out.php\">";
-				echo "<img class=\"small_photo\" src=\"./assets/Images/cross_close.png\" alt=\"Log out\" title=\"Log out\"></a>\n";
-				echo "\t\t<a href=\"./Doctor/doctor_index.php\" class=\"am_i_this_person\">\n\t\t\t Dr. " . $_SESSION['name'];
+				echo "<img class=\"small_photo\" src=\"../assets/Images/cross_close.png\" alt=\"Log out\" title=\"Log out\"></a>\n";
+				echo "\t\t<a href=\"../Doctor/doctor_index.php\" class=\"am_i_this_person\">\n\t\t\t Dr. " . $_SESSION['name'];
 				echo "<br />\n";
 
 				$cpt = 0;
@@ -71,7 +71,7 @@
 
 				echo "<div class=\"div_number_1\">\n\t\t";
 				echo "<a class=\"top_right\" href=\"./log_out.php\">";
-				echo "<img class=\"small_photo\" src=\"./assets/Images/cross_close.png\" alt=\"Log out\" title=\"Log out\"></a>\n";
+				echo "<img class=\"small_photo\" src=\"../assets/Images/cross_close.png\" alt=\"Log out\" title=\"Log out\"></a>\n";
 				echo "\t\t<a href=\"./Admin/admin_index.php\" class=\"am_i_this_person\">\n\t\t\t" . $_SESSION['name'];
 				echo "<br />\n";
 				
@@ -83,11 +83,11 @@
 	<!-- Signup and login buttons of the top of the page -->
 
 	<div class="top_logo_both">
-		<a href="./Patient/appointments.php" class="button-1">
+		<a href="../Patient/appointments.php" class="button-1">
 			<div class="eff-1"></div>
 			<p>Log in</p>
 		</a>
-		<a href="./Patient/sign_up_patient.php" class="button-2">
+		<a href="../Patient/sign_up_patient.php" class="button-2">
 			<div class="eff-2"></div>
 			<p>Sign up</p>
 		</a>
@@ -95,17 +95,17 @@
 </div>
 
 <header class="top_header">
-	<h1><a href="./index.php">Princeton Plainsboro</a></h1>
+	<h1><a href="../Index/index.php">Princeton Plainsboro</a></h1>
 	<p>Welcome to the General Practitioner Appointment Management System.</p>
 
 	<nav>
 		<ul>
-			<li><a href="./index.php">Home</a></li>
-			<li><a href="./Presentation/services.php">Services</a></li>
-			<li><a href="./Presentation/consultation.php">Consultation Fees</a></li>
-			<li><a href="./Presentation/resources.php">Resources</a></li>
-			<li><a href="./Patient/appointments.php">Appointments</a></li>
-			<li><a href="./Presentation/contact.php">Contact</a></li>
+			<li><a href="../Index/index.php">Home</a></li>
+			<li><a href="../Presentation/services.php">Services</a></li>
+			<li><a href="../Presentation/consultation.php">Consultation Fees</a></li>
+			<li><a href="../Presentation/resources.php">Resources</a></li>
+			<li><a href="../Patient/appointments.php">Appointments</a></li>
+			<li><a href="../Presentation/contact.php">Contact</a></li>
 		</ul>
 	</nav>
 </header>
