@@ -7,7 +7,7 @@ if (isset($_SESSION['type']) and ($_SESSION['type'] == "patient" or $_SESSION['t
 	// If a session is already created and if it's for a patient or a doctor you cannot access to this page
 
 	echo "<script>alert(\"You are already log in. Please log out and try again.\")
-			document.location.href = './Presentation/services.php'; 
+			document.location.href = '../Presentation/services.php'; 
 			</script>"; 
 
 }
@@ -15,7 +15,7 @@ else if (isset($_SESSION['type']) and $_SESSION['type'] == "admin") {
 	// If a session is already created and if it's for an admin you cannot access to this page
 
 	echo "<script>alert(\"To add a new doctor, please go to private page and click on \"Manage Doctor\"\")
-			document.location.href = './Presentation/services.php'; 
+			document.location.href = '../Presentation/services.php'; 
 			</script>"; 
 
 }
@@ -47,7 +47,7 @@ else {
 
 			if ($reponse->fetch() != null) {
 				echo "<script>alert(\"Your email is already given.\")
-				document.location.href = './Doctor/demands_new_doctor.php'; 
+				document.location.href = '../Doctor/demands_new_doctor.php'; 
 				</script>";
 			}
 
@@ -72,7 +72,7 @@ else {
 
 			// We check if the photo is alright and we put it in the right folder and with the good name
 
-			$upload_image = upload('image_doctor','./assets/Images/',1048576, array('png','gif','jpg','jpeg'), $id_doctor);
+			$upload_image = upload('image_doctor','../assets/Images/',1048576, array('png','gif','jpg','jpeg'), $id_doctor);
 
 			$reponse->closeCursor();
  
@@ -85,7 +85,7 @@ else {
 			    	'id' => $id_doctor));
 
 				echo "<script>alert(\"Thank you. Your request will be managed by the admin.\")
-				document.location.href = './index.php'; 
+				document.location.href = '../index.php'; 
 				</script>";
 			}
 			else {
@@ -118,18 +118,18 @@ function upload($index, $destination, $maxsize=false, $extensions=false, $name) 
 	<head>
 		<title>General Practioner</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
-		<link rel="icon" type="image/png" href="./assets/Images/icon.ico" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="image/png" href="../assets/Images/icon.ico" />
 	</head>
 	<body>
 
-	<?php include('./Presentation/header.php');?>
+	<?php include('../Presentation/header.php');?>
 
 	<h2 class="titles_h2">Job application</h2>
 
 	<!-- New doctor form -->
 
-	<form class="form_style" method="POST" action="./Doctor/demands_new_doctor.php" enctype="multipart/form-data">
+	<form class="form_style" method="POST" action="../Doctor/demands_new_doctor.php" enctype="multipart/form-data">
 		<ul>
 			<li>
 			    <input type="text" name="name" class="field-style field-full align-non" placeholder="Name" />
@@ -154,7 +154,7 @@ function upload($index, $destination, $maxsize=false, $extensions=false, $name) 
 		</ul>
 	</form>
 
-	<?php include('./Presentation/footer.php');?>
+	<?php include('../Presentation/footer.php');?>
 
 	</body>
 </html>

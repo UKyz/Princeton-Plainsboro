@@ -5,13 +5,13 @@ session_start(); //Call to $_SESSION[]
 if (!isset($_SESSION) && empty($_SESSION)) {
 	// If there isn't a session, we cannot go in this page, we have to login as doctor
 	echo "<script>alert(\"You cannot access to this page without log in.\")
-		document.location.href = './index.php'; 
+		document.location.href = '../index.php'; 
 		</script>";
 }
 else if ($_SESSION['type'] != "doctor") {
 	// If a session is already created and if it's not for a doctor you cannot access to this page
 	echo "<script>alert(\"You cannot access to this page without log in.\")
-		document.location.href = './index.php'; 
+		document.location.href = '../index.php'; 
 		</script>";
 }
 
@@ -163,11 +163,11 @@ function update_waiting() {
 	<head>
 		<title>(Doctor) General Practioner</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
 	<body>
 
-	<?php include('./Presentation/header.php');?>
+	<?php include('../Presentation/header.php');?>
 
 	<div class="petit_texte_en_haut"><p>Welcome back Dr. <?php echo $_SESSION['name'] ?> !</p></div>
 
@@ -175,7 +175,7 @@ function update_waiting() {
 
 	<?php print_appointment($_SESSION['name']); ?>
 
-	<?php include('./Presentation/footer.php');?>
+	<?php include('../Presentation/footer.php');?>
 
 	</body>
 </html>

@@ -482,11 +482,11 @@ function print_page($page) {
 	<body>
 
 	<header class="top_header">
-		<h1><a href="./index.php">Princeton Plainsboro</a></h1>
+		<h1><a href="../index.php">Princeton Plainsboro</a></h1>
 		<p>Welcome to the General Practitioner Appointment Management System.</p>
 
 		<div id="form_admin_index">
-			<form method="GET" action="./Admin/admin_index.php">
+			<form method="GET" action="admin_index.php">
 				<!-- This form is usefull to display the public page that we want -->
 				<input type="radio" name="page" value="homepage" checked/> Homepage <input type="radio" name="page" value="services" /> Services <input type="radio" name="page" value="consultation" /> Consultation Fees <input type="radio" name="page" value="resources" /> Resources <input type="radio" name="page" value="appointments" /> Appointments <input type="radio" name="page" value="contact" /> Contact
 				<input class="button_like_form_style" type="submit" value="Change the page" />
@@ -502,7 +502,7 @@ function print_page($page) {
 
 		<div class="in_div_2" id="point">
 
-		    <form class="form_style" method="POST" action="./Admin/admin_index.php">
+		    <form class="form_style" method="POST" action="admin_index.php">
 				<ul>
 					<li>
 						<div class="span_radio_1">
@@ -547,7 +547,7 @@ function print_page($page) {
 
 		<div class="in_div_2">
 
-		    <form class="form_style" method="POST" action="./Admin/admin_index.php#point">
+		    <form class="form_style" method="POST" action="admin_index.php#point">
 				<ul>
 					<li>
 						<div class="span_radio_1">
@@ -583,9 +583,9 @@ function print_page($page) {
 
     </div>
 
-	<p class="div_print_page"><a href="./log_out.php" class="button_log_out">Log out</a></p>
+	<p class="div_print_page"><a href="../log_out.php" class="button_log_out">Log out</a></p>
 
-	<p class="div_print_page"><a href="./Doctor/manage_doctor.php" class="button_log_out">Manage Doctor</a></p>
+	<p class="div_print_page"><a href="../Doctor/manage_doctor.php" class="button_log_out">Manage Doctor</a></p>
 
 	<?php 
 		// Display the page from the header form
@@ -625,7 +625,7 @@ function print_page($page) {
 
 	<?php print_timetable();?>
 
-	<?php include('./Presentation/footer.php');?>
+	<?php include('../Presentation/footer.php');?>
 
 	</body>
 </html>
