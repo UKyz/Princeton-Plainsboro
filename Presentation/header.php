@@ -21,7 +21,7 @@
 				// Display a rectangle with the name of the patient and the number of appointments Ok with a link to see the appointments page.
 
 				echo "<div class=\"div_number_1\">\n\t\t";
-				echo "<a class=\"top_right\" href=\"./log_out.php\">";
+				echo "<a class=\"top_right\" href=\"../log_out.php\">";
 				echo "<img class=\"small_photo\" src=\"../assets/Images/cross_close.png\" alt=\"Log out\" title=\"Log out\"></a>\n";
 				echo "\t\t<a href=\"../Patient/appointments.php\" class=\"am_i_this_person\">\n\t\t\t" . $_SESSION['name'];
 				echo "<br />\n";
