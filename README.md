@@ -69,26 +69,27 @@ Feel free to contribute or discuss this application. Please contact me if you fi
   This application can be managed by an admin. This admin is allow to change the pages' contains. He can add texts and photos in every pages. He can also managed patients' and doctors' accounts, every doctor has to be confirmed by the admin to be a part of the doctors' list.
   
   ### Public
-  Home :
+  #### Home :
+  
   In the home page you can see the opening hours of the day and also some photos of the clinic.
 
-  Services :
+  #### Services :
 
   You can see the doctors with photos, and there is also a link if you are a doctor and you want to join de clinic.
 
-  Consultation Fees :
+  #### Consultation Fees :
 
   In this page there is many questions that are uselly asked about consultations and appointements.
 
-  Resources :
+  #### Resources :
 
   There is many usefull links about healthcare.
 
-  Appointments :
+  #### Appointments :
 
   You can create and manage your appointments in this page. But first of all you need to sign up or log in.
 
-  Contact :
+  #### Contact :
 
   You can see all contact that patients need and also the opening hours.
   
