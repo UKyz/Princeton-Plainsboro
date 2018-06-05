@@ -68,44 +68,61 @@ Feel free to contribute or discuss this application. Please contact me if you fi
   Every patients and every doctors need to sign up to use this application. With your account you can create, control or delete appointements by a simple click. 
   This application can be managed by an admin. This admin is allow to change the pages' contains. He can add texts and photos in every pages. He can also managed patients' and doctors' accounts, every doctor has to be confirmed by the admin to be a part of the doctors' list.
   
-  ### Home
+  ### Public
+    #### Home
+
+    In the home page you can see the opening hours of the day and also some photos of the clinic.
+
+    #### Services
+
+    You can see the doctors with photos, and there is also a link if you are a doctor and you want to join de clinic.
+
+    #### Consultation Fees
+
+    In this page there is many questions that are uselly asked about consultations and appointements.
+
+    #### Resources
+
+    There is many usefull links about healthcare.
+
+    #### Appointments
+
+    You can create and manage your appointments in this page. But first of all you need to sign up or log in.
+
+    #### Contact
+
+    You can see all contact that patients need and also the opening hours.
   
-  In the home page you can see the opening hours of the day and also some photos of the clinic.
+  ### Admin
   
-  ### Services
+  The admin can create, manage or delete pages' contain. He's able to put texts, photos, links in all public's pages.
+  He is also the one who can accept new doctor. 
   
-  You can see the doctors with photos, and there is also a link if you are a doctor and you want to join de clinic.
+  ### Doctor
   
-  ### Consultation Fees
+  The doctor can accept or refuse an appointements asked by a patient. He can also add a comment. 
   
-  In this page there is many questions that are uselly asked about consultations and appointements.
+  ### Patient
   
-  ### Resources
-  
-  There is many usefull links about healthcare.
-  
-  ### Appointments
-  
-  You can create and manage your appointments in this page. But first of all you need to sign up or log in.
-  
-  ### Contact
-  
-  You can see all contact that patients need and also the opening hours.
+  The patient can take or cancel an appointement. He's also able to see old appointements and next one.
   
   ### Screenshots
   
  <p align="center">
-  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot1">
-  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot2">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton1">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton2">
   <br />
-  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot3">
-  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot4">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton3">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton4">
   <br />
-  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot5">
-  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot6">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton5">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton6">
   <br />
-  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot7">
-  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/screenshot8">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton7">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton8">
+  <br />
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton9">
+  <img width="356" height="200" src="http://victor-fauquembergue.fr/imagesGit/princeton10">
  </p>
 
 ## Credits
