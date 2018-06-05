@@ -69,7 +69,7 @@ function add_to_DB($table) {
 	<head>
 		<title>(Patient) General Practioner</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="icon" type="image/png" href="../assets/Images/icon.ico" />
 	</head>
 	<body>

@@ -6,12 +6,12 @@ session_start(); //Call to $_SESSION[]
 
 if (!isset($_SESSION) && empty($_SESSION)) {
 	echo "<script>alert(\"You cannot access to this page without log in.\")
-		document.location.href = './index.php'; 
+		document.location.href = '../index.php'; 
 		</script>";
 }
 else if ($_SESSION['type'] != "admin") {
 	echo "<script>alert(\"You cannot access to this page without log in.\")
-		document.location.href = './index.php'; 
+		document.location.href = '../index.php'; 
 		</script>";
 }
 
@@ -62,7 +62,7 @@ function main() {
 					// If it's not, we print a message and refresh the page.
 
 					echo "<script>alert(\"This ID is already given.\")
-						document.location.href = './Admin/admin_index.php'; 
+						document.location.href = 'admin_index.php'; 
 						</script>";
 				}
 
@@ -135,7 +135,7 @@ function print_photo($table) {
 	// Return HTML code about an article of photo type
 
 	$html = "<div class=\"div_class\" href=\"" . $table['link'] . "\">\n";
-	$html .= "\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
+	$html .= "\t<img src=\"../assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t<p class=\"info_print_admin\"> Photo : " . $table['photo'] . "</p>\n";
 	$html .= "\t<p class=\"info_print_admin\"> ID : " . $table['id'] . "</p>\n";
 	$html .= "</div>\n";
@@ -164,7 +164,7 @@ function print_photo_text($table) {
 	$html = "<div class=\"div_class\">\n";
 	$html .= "\t<h3>" . $table['titre'] . " ID = " . $table['id'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"../assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t<p class=\"info_print_admin\"> Photo : " . $table['photo'] . "</p>\n";
 	$html .= "\t</div>\n";
@@ -180,7 +180,7 @@ function print_link_photo($table) {
 	$html = "<a class=\"div_class\" href=\"" . $table['link'] . "\">\n";
 	$html .= "\t<h3>" . $table['titre'] . " ID = " . $table['id'] . "</h3>\n";
 	$html .= "\t<div class=\"photo_text\">\n";
-	$html .= "\t\t<img src=\"./assets/Images/" . $table['photo'] . "\">";
+	$html .= "\t\t<img src=\"../assets/Images/" . $table['photo'] . "\">";
 	$html .= "\t\t<p>" . $table['texte'] . "</p>\n";
 	$html .= "\t<p class=\"info_print_admin\"> Photo : " . $table['photo'] . "</p>\n";
 	$html .= "\t<p class=\"info_print_admin\"> Link : " . $table['link'] . "</p>\n";
@@ -326,7 +326,7 @@ function print_timetable() {
 	$reponse = $bdd->query('SELECT * FROM timetable');
 	$donnees = $reponse->fetch();
 
-	$html = "<form method=\"POST\" action=\"./Admin/admin_index.php\">";
+	$html = "<form method=\"POST\" action=\"admin_index.php\">";
 	$html .= "<table class=\"tab_hour_style\">\n";
 	$html .= "\t<thead><th>Days</th><th>Hours</th></thead>\n";
 	$html .= "\t<tbody>\n";
@@ -369,7 +369,7 @@ function print_choice($table) {
 
 	if ($request == null) {
 		echo "<script>alert(\"No article find for this id.\")
-            document.location.href = './Admin/admin_index.php';
+            document.location.href = 'admin_index.php';
             </script>";
 	}
 	else {
@@ -476,8 +476,8 @@ function print_page($page) {
 	<head>
 		<title>(Admin) General Practioner</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
-		<link rel="icon" type="image/png" href="./assets/Images/icon.ico" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="image/png" href="../assets/Images/icon.ico" />
 	</head>
 	<body>
 
